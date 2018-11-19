@@ -1,6 +1,5 @@
 # Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+.DS_Store
 
 ## Build generated
 build/
@@ -16,11 +15,14 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+!default.xcworkspace
+profile
 
 ## Other
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+.idea/
 
 ## Obj-C/Swift specific
 *.hmap
@@ -46,14 +48,14 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build
+# Carthage/Build
 
 # fastlane
 #
@@ -62,7 +64,7 @@ Carthage/Build
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+# fastlane/report.xml
+# fastlane/Preview.html
+# fastlane/screenshots/**/*.png
+# fastlane/test_output

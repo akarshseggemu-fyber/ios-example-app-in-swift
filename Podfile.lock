@@ -1,0 +1,16 @@
+PODS:
+  - Heyzap (9.51.0)
+
+DEPENDENCIES:
+  - Heyzap
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Heyzap
+
+SPEC CHECKSUMS:
+  Heyzap: 0f3a429823c53a4b837f8bd9ea724272e75304f8
+
+PODFILE CHECKSUM: 0302bb9d2c0bae27f177b1219197f5ea398e77ad
+
+COCOAPODS: 1.5.3
