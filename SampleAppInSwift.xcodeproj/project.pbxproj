@@ -24,7 +24,6 @@
 		D3645466219B3E8000D4FF5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3645465219B3E8000D4FF5C /* ViewController.swift */; };
 		D3645469219B3E8000D4FF5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3645467219B3E8000D4FF5C /* Main.storyboard */; };
 		D364546B219B3E8100D4FF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D364546A219B3E8100D4FF5C /* Assets.xcassets */; };
-		D364546E219B3E8100D4FF5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D364546C219B3E8100D4FF5C /* LaunchScreen.storyboard */; };
 		F5C2063C6BDA7FCA7DFF6C46 /* libPods-SampleAppInSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B918BCAFD0B995648E8517 /* libPods-SampleAppInSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		D3645465219B3E8000D4FF5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D3645468219B3E8000D4FF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D364546A219B3E8100D4FF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D364546D219B3E8100D4FF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D364546F219B3E8100D4FF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C1792D219C601D009EECC5 /* SampleAppInSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleAppInSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2B918BCAFD0B995648E8517 /* libPods-SampleAppInSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleAppInSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				D3645467219B3E8000D4FF5C /* Main.storyboard */,
-				D364546C219B3E8100D4FF5C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D364546E219B3E8100D4FF5C /* LaunchScreen.storyboard in Resources */,
 				D364546B219B3E8100D4FF5C /* Assets.xcassets in Resources */,
 				D3645469219B3E8000D4FF5C /* Main.storyboard in Resources */,
 			);
@@ -332,14 +328,6 @@
 				D3645468219B3E8000D4FF5C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D364546C219B3E8100D4FF5C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D364546D219B3E8100D4FF5C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -466,6 +454,7 @@
 			baseConfigurationReference = F104C1E3ACB163A9D939A332 /* Pods-SampleAppInSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P65VEJ9422;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppInSwift/Assets/Info.plist";
@@ -487,6 +476,7 @@
 			baseConfigurationReference = C7D9F63B0FFBA4F352B0E0FF /* Pods-SampleAppInSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P65VEJ9422;
 				INFOPLIST_FILE = "$(SRCROOT)/SampleAppInSwift/Assets/Info.plist";
