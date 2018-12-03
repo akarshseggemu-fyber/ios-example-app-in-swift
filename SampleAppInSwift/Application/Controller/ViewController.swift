@@ -54,29 +54,33 @@ class ViewController: UIViewController, UITextFieldDelegate, HZAdsDelegate, HZIn
         // setting the background
         self.view.backgroundColor = UIColor.lightGray
         
-        
+        // This function sets up the UI programmatically
+        setupUI()
+    }
+    
+    fileprivate func setupUI() {
         // MARK: Scroll View
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         scrollView.contentSize = CGSize(width: self.view.frame.width, height: (self.view.frame.height + 100))
         
         // This is for fixing the margins in landscape mode iPhone X
-//        scrollView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        if #available(iOS 11, *) {
-//            let guide = view.safeAreaLayoutGuide
-//            NSLayoutConstraint.activate([
-//                scrollView.topAnchor.constraint(equalToSystemSpacingBelow: guide.topAnchor, multiplier: 1.0),
-//                guide.bottomAnchor.constraint(equalToSystemSpacingBelow: scrollView.bottomAnchor, multiplier: 1.0)
-//                ])
-//
-//        } else if #available(iOS 9, *){
-//            let standardSpacing: CGFloat = 8.0
-//            NSLayoutConstraint.activate([
-//                scrollView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: standardSpacing),
-//                bottomLayoutGuide.topAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: standardSpacing)
-//                ])
-//        }
+        //        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        //
+        //        if #available(iOS 11, *) {
+        //            let guide = view.safeAreaLayoutGuide
+        //            NSLayoutConstraint.activate([
+        //                scrollView.topAnchor.constraint(equalToSystemSpacingBelow: guide.topAnchor, multiplier: 1.0),
+        //                guide.bottomAnchor.constraint(equalToSystemSpacingBelow: scrollView.bottomAnchor, multiplier: 1.0)
+        //                ])
+        //
+        //        } else if #available(iOS 9, *){
+        //            let standardSpacing: CGFloat = 8.0
+        //            NSLayoutConstraint.activate([
+        //                scrollView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: standardSpacing),
+        //                bottomLayoutGuide.topAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: standardSpacing)
+        //                ])
+        //        }
         
         view.addSubview(scrollView)
         
@@ -248,7 +252,7 @@ class ViewController: UIViewController, UITextFieldDelegate, HZAdsDelegate, HZIn
     func log(toConsole consoleString: String?) {
         let format = DateFormatter()
         format.dateFormat = "[h:mm:ss a]"
-        consoleTextView!.text = consoleTextView!.text + "\n\n \(format.string(from: Date())) \(String(describing: consoleString))"
+        consoleTextView!.text = consoleTextView!.text + "\n\n \(format.string(from: Date())) " + consoleString!
         
 //        // get around weird bug in iOS 9 - text view scrolling has issues when done directly after updating the text
 //        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0.1 * Double(NSEC_PER_SEC)))) {
